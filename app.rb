@@ -18,4 +18,10 @@ class App < Sinatra::Base
     "Goodbye, #{@user_name}."
   end
 
+  get "/addnumbers/:number1/:number2" do
+    @no1 = params[:number1]
+    @no2 = params[:number2]
+    @no1 + @no2    
+  end
+
 end
